@@ -4,7 +4,7 @@ import {Menu} from 'antd'
 
 let Toolbar = () => {
 	return (
-		<div className="c-toolbar">
+		<div className="c-toolbar" >
 
 			<div className="logo" />
 

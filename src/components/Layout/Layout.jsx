@@ -11,10 +11,10 @@ let _Layout = ({children, history}) => {
 		<Layout>
 			<Header>
 				<Toolbar />
-			</Header>,
-			<Content>
+			</Header>
+			<Content style={{ minHeight: '100vh' }}>
 				{children}
-			</Content>,
+			</Content>
 			<Footer>
 				<_Footer />
 			</Footer>
