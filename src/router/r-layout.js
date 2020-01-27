@@ -7,7 +7,7 @@ import Dashboard from '../components/Dashboard';
 export default ({ match }) => {
     return (
         <Layout >
-            {<Route exact path={`${match.url}`} component={Dashboard} />}
+            {<Route exact path={`${match.url}:id`} component={Dashboard} />}
         </Layout>
     );
 }
