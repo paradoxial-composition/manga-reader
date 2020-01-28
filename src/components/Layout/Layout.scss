@@ -7,3 +7,24 @@
   z-index: 1;
   width: '100%'
 }
+
+.ant-layout-header {
+  width: 564px;
+  margin: auto;
+  border-radius: 21px;
+  background: #212121;
+}
+
+.ant-layout {
+  background: #212121;
+}
+
+.ant-menu-item-selected {
+  border-radius: 40px;
+}
+
+.ant-menu .ant-menu-dark .ant-menu-root .ant-menu-horizontal {
+  line-height: 40px;
+  background: transparent;
+  margin-top: 1.5rem;
+}

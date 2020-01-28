@@ -26,7 +26,11 @@ let Toolbar = ({componentItems}) => {
 			theme="dark"
 			mode="horizontal"
 			defaultSelectedKeys={['0']}
-			style={{ lineHeight: '64px' }}
+			style={{ 
+				lineHeight: '42px', 
+				background: 'transparent',
+				marginTop: '1.5rem'
+			}}
 			>
 				{tabs}
 			</Menu>
