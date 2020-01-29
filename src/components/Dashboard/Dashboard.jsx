@@ -1,12 +1,17 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import './Dashboard.scss';
 import { Row, Col, Card } from 'antd';
+
 const { Meta } = Card;
 
+const mapStateToProps = state => {
+	return {items: state.mangas.concat(state.animes) }
+}
 
-let Dashboard = ({tempCards, componentItems, myItems, entryType}) => {
+let ConnectedDashboard = ({tempCards, componentItems, items, entryType}) => {
 
-	myItems.forEach((element, index) => {
+	items.forEach((element, index) => {
 		if (element.type == entryType || entryType == 'all') {
 			tempCards.push(
 				<Col key={index} xs={{ span: 1, offset: 1 }} lg={{ span: 2, offset: 2 }}>
@@ -42,5 +47,7 @@ let Dashboard = ({tempCards, componentItems, myItems, entryType}) => {
 			</div>
 		);
 }
+
+const Dashboard = connect(mapStateToProps)(ConnectedDashboard)
 
 export default Dashboard;
